@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <!-- Área para a logo da empresa -->
+        <div class="logo">
+            <!-- Imagem da logo; substitua 'logo.png' pelo caminho da sua logo -->
+            <img src="./img/logo.png" alt="Logo da Empresa">
+        </div>
+        <!-- Título da página de login -->
+        <h2>Login</h2>
+        
+        <!-- Formulário de login -->
+        <form action="#" method="POST">
+            <!-- Campo de entrada para o usuário -->
+            <div class="input-group">
+                <label for="username">Usuário</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            
+            <!-- Campo de entrada para a senha -->
+            <div class="input-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            
+            <!-- Botão de login -->
+            <button type="submit">Login</button>
+            
+            <!-- Link para recuperação de senha -->
+            <a href="novasenha.html" class="forgot-password">Esqueceu a senha?</a>
+        </form>
+    </div>
+</body>
+</html>

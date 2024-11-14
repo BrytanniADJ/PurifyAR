@@ -26,7 +26,7 @@ div.divisor{
 main, html{
     background-color: #113959;
     color: #f5f5f5;
-    font-family: "Fredoka", sans-serif;;
+    font-family: "Fredoka", sans-serif;
 }
 
 header{
@@ -34,79 +34,105 @@ header{
     width: 100%;
     padding-block: 5px;
     position: relative;
-    img#logo{
-        width: 6%;
-    }
-    img#login{
-        width: 15%;
-        margin-right: 10px;
-    }
-    a{
-        text-align: left;
-        color: white;
-    }
-    img#seta{
-        position: absolute;
-        max-width: 15px;
-        top: 50px;
-        right: 22.5%;
-    }
-    img#lupa{
-        position: absolute;
-        max-width: 30px;
-        left: 55%;
-    }
-    input{
-        min-width: 70vh;
-        padding-left: 10px;
-        height: 30px;
-        border-radius: 10px;
-        border: 2px solid #248eff;
-        font-size: 17px;
-    }
-    img.icons{
-        width: 30px;
-        margin-inline: 10px;
-    }
+}
+header img#logo{
+    width: 6%;
+}
+header img#login{
+    width: 15%;
+    margin-right: 10px;
+}
+header a{
+    text-align: left;
+    color: white;
+}
+header img#seta{
+    position: absolute;
+    max-width: 15px;
+    top: 50px;
+    right: 22.5%;
+}
+header img#lupa{
+    position: absolute;
+    max-width: 30px;
+    left: 55%;
+}
+header input{
+    min-width: 70vh;
+    padding-left: 10px;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid #248eff;
+    font-size: 17px;
+}
+header img.icons{
+    width: 30px;
+    margin-inline: 10px;
 }
 main{
     div.carrossel{
         margin-top: 10px;
         overflow-x: auto;
         margin-inline: 5%;
-        img{
-            width: 80vh;
-        }
+    }
+    div.carrossel img{
+        width: 80vh;
     }
 
     section.caixas{
         margin-inline: 5%;
         margin-block: 10px;
-        div{
-            background-color: #8f98ec;
-            padding: 5px;
-            border-radius: 20px;
-            border: 2px solid #5564eb;
-            min-width: 110px;
-            min-height: 100px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        p:nth-of-type(1){
-            font-size: 22px;
-        }
-        p:nth-of-type(2){
-            font-size: 30px;
-            color: blue;
-        }
-        p{
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: bold;
-        }
+    }
+    section.caixas div{
+        background-color: #8f98ec;
+        padding: 5px;
+        border-radius: 20px;
+        border: 2px solid #5564eb;
+        min-width: 110px;
+        min-height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    section.caixas p:nth-of-type(1){
+        font-size: 22px;
+    }
+    section.caixas p:nth-of-type(2){
+        font-size: 30px;
+        color: blue;
+    }
+    section.caixas p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
     }
 }
-footer{
+footer {
     background-color: #f1f3fa;
     width: 100%;
+    text-align: center;
+    padding: 10px 0;
 }
+
+/* Estilização do contêiner dos ícones e do nome */
+footer .social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espaço entre os ícones e o nome */
+}
+
+/* Estilização do nome da marca */
+footer .social-icons .brand-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #084d6e; /* Cor do nome da marca */
+}
+
+/* Estilização dos ícones de redes sociais */
+footer .social-icons img {
+    width: 24px; /* Tamanho dos ícones */
+    height: 24px;
+    cursor: pointer;
+}
+
+
